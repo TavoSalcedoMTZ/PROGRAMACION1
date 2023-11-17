@@ -1,0 +1,57 @@
+#include <string>
+#include <iostream>
+
+int main()
+{
+    char tecla;
+   std::string contrasena,usuario;
+   bool ciclo;
+   
+   while(ciclo==false){
+   
+   std::cout<<"Ingresa tu usuario"<< std::endl;
+   std::cin>>usuario;
+   
+    if( usuario=="q"){
+       return 0;
+   }
+   
+   std::cout<<"Ingresa una contraseña para ingresar"<< std::endl;
+   std::cin>>contrasena;
+   
+      if(contrasena=="q"){
+       return 0;
+   }
+   
+   if (contrasena== "12345678" && contrasena.size()==8 && usuario=="Octavio")
+    {
+      std::cout<<"Acceso correcto"<< std::endl;
+      return 0;
+   
+    }
+    else if (usuario!="Octavio")
+    {
+      std::cout<<"Tu usuario es incorrecto "<< std::endl;
+      
+    }
+    
+   else if (contrasena.size()<8 || contrasena.size()>8 )
+   {
+        std::cout<<"Introduce una contraseña de 8 caracteres para continuar "<< std::endl;
+    }
+   else
+   {
+       std::cout<<"Acceso incorrecto"<< std::endl;
+   }
+    std::cout<<""<< std::endl;
+    std::cout<<"Para salir presiona la q"<< std::endl;
+    std::cin>>tecla;
+    
+    if (tecla=='q'||tecla=='Q'){
+      return 0;
+    }
+
+     }
+
+    return 0;
+}
