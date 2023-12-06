@@ -1,5 +1,6 @@
+#include "seguro.h"
 int main() {
-    polizaSeguro a(0,0,0,0);
+    polizaSeguro a;
     a.pedidamenu();
     a.menu();
     return 0;
