@@ -9,7 +9,10 @@
 class persona {
 public:
     //CREA CONSTRUCTOR DE LA CLASE
-    persona(){}
+    persona(){
+        this->maximomonto=0;
+        this->deducible=0;
+    }
     //CREA FUNCIÓN DE PEDIDA DE DATOS
     void getName() {
         std::cout << "Ingresa el nombre" << std::endl;
@@ -93,7 +96,10 @@ protected:
 class vivienda{
 public:
     //CONSTRUCTOR DE CLASE VIVIENDA
-    vivienda(){}
+    vivienda(){
+        this->maximomonto1=0;
+        this->deducible1=0;
+    }
 
     //CREA FUNCIÓN DE PEDIDA DE DATOS
     void setDireccion(){
@@ -137,7 +143,10 @@ protected:
 class vehiculo{
 public:
     //CREA EL CONSTRUCTOR DE CLASE
-    vehiculo(){}
+    vehiculo(){
+        this->maximomonto2=0;
+        this->deducible2=0;
+    }
     //CREA FUNCIÓN DE PEDIDA DE DATOS
     void setAnocarro(){
         std::cout<<"Ingresa el año del vehiculo"<<std::endl;
